@@ -1,0 +1,30 @@
+title: RodLDR | Mechatronics Portfolio
+description: >-
+  Mechatronics engineering portfolio showcasing robotics, embedded systems,
+  and CAD design projects.
+baseurl: "/portfolio"
+url: "https://rodldr.github.io"
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
